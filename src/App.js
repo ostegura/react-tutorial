@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
+import Person from './Person/Person';
+// example how it works pod kapotom
+// function App() {
+//   return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Hello, world!'));
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  		<div className="App">
+  			<h1>Hello, world!</h1>
+  			<p>Subtext</p>
+  			<Person />
+  		</div>
+  	);
 }
 
 export default App;
